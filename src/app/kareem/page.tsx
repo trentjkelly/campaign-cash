@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Company from "./company"
 
 export default function Home() {
   return (
     <main>
-      <div className=" h-screen flex flex-row items-center">
-        <div className="basis-1/4 ml-32 ">
+      <div className="h-screen flex flex-col">
+        <div className="h-72 m-5 flex items-center justify-center bg-red-400 rounded-xl">
           <Image
             src="/Joe_Biden_presidential_portrait.jpg" // Replace with your image path
             width={300} // Replace with your desired width
@@ -12,9 +13,15 @@ export default function Home() {
             alt="Joe Biden"
           />
         </div>
-        <div className="basis-3/4 text-9xl ml-40">
-            <h2>Joe Biden</h2>
         </div>
+        <Company></Company>
+        <Company></Company>
+        <Company></Company>
+        <Company></Company>
+        <Company></Company>
+        <Company></Company>
+
+
       </div>
     </main>
   );
